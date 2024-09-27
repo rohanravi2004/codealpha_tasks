@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/2857/2857075.png">
+</head>
+<body>
+    <div class="container">
+        <div class="age-calculator-box">
+            <h1>Age Calculator</h1>
+            <p class="subheading">Enter your date of birth to calculate your exact age with precision.</p>
+            <form id="ageForm" class="form-container">
+                <div class="input-group">
+                    <label for="day">Day</label>
+                    <input type="number" id="day" name="day" min="1" max="31" placeholder="DD" required>
+                </div>
+                <div class="input-group">
+                    <label for="month">Month</label>
+                    <input type="number" id="month" name="month" min="1" max="12" placeholder="MM" required>
+                </div>
+                <div class="input-group">
+                    <label for="year">Year</label>
+                    <input type="number" id="year" name="year" min="1900" max="2024" placeholder="YYYY" required>
+                </div>
+                <button type="submit" class="btn">Calculate Age</button>
+            </form>
+            <div id="result"></div>
+        </div>
+    </div>
+    <footer>
+        <p>Made with ❤️ by ROHAN RAVINDRAN</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
